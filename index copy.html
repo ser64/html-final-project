@@ -1,0 +1,363 @@
+
+ <!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="utf-8" /> 
+<title>The Gym-Personal Training</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="blueberry.css"/>
+<style type="text/css">
+
+* {
+
+  margin: 0;
+  border:0;
+  padding:0;
+}
+body {
+  background: #f0f0f0;
+  font:14px/20px; Arial,San-Serif;
+  color:#555;
+  margin:0;
+}
+
+#pic{
+
+  width:100%;
+}
+h1{
+  text-align: center;
+  font-size: 180%;
+  line-height:120%;
+  padding: 5% 0;
+}
+h2{
+  text-decoration: underline;
+  line-height: 280%;
+  padding-left: 2%;
+}
+h3{
+  line-height: 110%;
+  padding: 5% 0; /*top bottom/left right*/
+}
+p{
+  padding: 1%;
+}
+img {
+  text-align: center;
+  max-width: 100%;
+  height:auto;
+  width: auto;
+}
+a{
+  color:#fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+/*hover style specificly the navination*/
+a:hover {
+  color:#fff;
+  text-decoration: underline;
+}
+/*header you can see the navegartion and the logo*/ 
+header {
+  background: #405580;
+  width: 100%; 
+  height:86px;
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index:-1; /*stays on top of anything*/
+  opacity: 0.90;
+}
+#logo {
+  margin:20px;
+  float:left;
+  width:200px;
+  height:60px;
+  background: url(http://www.3newbie.com/wp-content/uploads/the-gym.png)no-repeat center;
+}
+nav{
+  float:right;
+  padding: 35px 20px 20px 0; /*for navigation menu*/
+}
+#menu-icon {
+  display:hidden;
+  width:40px;
+  height:40px;
+  background: url(http://www.3newbie.com/wp-content/uploads/icon.png) center;
+}
+a:hover#menu-icon{
+  border-radius: 4px 4px 0 0;
+}
+ul {
+  list-style: none;
+}
+nav ul li{
+  display:inlime-block;
+  float:left;
+  padding:10px;
+}
+.current{
+  color:#fff;
+  text-decoration: underline;
+  }
+  #doc {
+    margin:40px 0;
+ }   
+  #content: {
+    margin: 0 auto;
+    max-width: 1140px;
+    margin-top: 110px;  
+  }
+.blueberry {
+    max-width: 960px;
+    margin-top:110;
+  }
+section{
+  width: 29%;
+  float:left;
+  margin: 2% 2%;
+  text-align: center;
+}
+.clear {
+  clear: both;
+}
+article{
+  float: left;
+  margin: 0 auto;
+  width: 50;
+  height:auto;
+  padding: 4%;
+}
+aside {
+  float: right;
+  margin:0 auto;
+  width:35%;
+  height: auto;
+  padding: 3%;
+}
+ul.gym li{
+  padding-left:3%;
+}
+footer{
+  background:#333333;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.90;
+}
+footer p, footer h3 {
+  color:#fff;
+}
+footer p a {
+   color:#fff;
+   text-decoration: none;   
+}
+ul.social li {
+  display:inline;
+}
+ul.social li img {
+   height:50px;
+}
+footer.second {
+  border-top: 1px solid #4D4E50;
+  background-color: #333333;
+  max-height: 50PX;
+  text-align: center;
+  opacity: 0.95;
+}
+
+  /*...................MEDIA!!!!..........*/
+@media screen and (max-width: 478px) {
+   body {
+    position: absolute;
+   }
+}
+@media screen and (max-width: 740px) {
+  header {
+    position: absolute;
+  }
+  #menu.icon {
+    display: inline-block;
+  }
+  nav ul, nav:active ul {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: #405580;
+    border:1px solid #fff;
+    right: 20px;
+    top: 60px;
+    width: 50px;
+    border-radius: 2px 0 2px 2px;
+  }
+  nav li {
+    text-align: center;
+    width: 100;
+    padding:10px 0;
+    margin: 0; 
+  }
+  nav.hover ul {
+    display: block;
+  }
+  section {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  article {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  aside {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+</style>
+<script src="http://www.ajax.googleapis.com/libs/jquery/1.6.1-jquery.min.js"></script>
+<script src="jquery.blueberry.js"></script>
+<script>
+
+$(window).load(function(){
+$('.blueberry').blueberry();
+});
+</script>
+
+</head>
+ 
+ <!-- we doing a jquery coding for sliding -->
+
+</script>
+</header>
+<body>
+<header>
+    <a href="#" id="logo"></a>
+     <nav>
+      <a href="#" id="menu-icon"></a>
+        <ul> 
+           <li><a href ="#" class="current">home</a></li>
+           <li><a href ="#" >Trainers</a></li>
+           <li><a href ="#" >Plans</a></li>
+           <li><a href ="#" >Facility</a></li>
+           <li><a href ="#" >Pricing</a></li>
+           <li><a href ="#" >Contacts</a></li> 
+        </ul>
+    </nav>
+
+</header>
+  
+
+   <div id="doc">
+     <!-- <div id="content"> -->
+       <!-- <div class="blueberry" > --> <!-- blueberry name the slider -->
+           <ul class="slides" >
+              <li><img src="the-gym.png" style="z-index:-1"></li>
+              <div id = "pics">
+              <li><img src="gym.png" style="width: 95%; margin:3%"></li>
+              <li><img src="push-ups.png"style="width: 95%; margin:3%"></li> 
+              <li><img src="chest-fly.png"style="width: 95%; margin:3%"></li> 
+              <li><img src="training.png"style="width: 95%; margin:3%"></li>
+              <div>
+            </ul>
+        </div>  
+     </div> 
+  
+
+  <section>
+      <img src="trainerslogo.png"/>
+      <h1>Best trainers around</h1>
+      <p>Here at the gym we have the best training staff in the state area as we seek and recruit talented trainers with all the right certifications. Come in today and let our trainers help you to reach your goals in the fastest way possible.</p>
+   </section> 
+    
+<section>
+      <img src="location.png"/>
+      <h1>Local & Convinient.</h1>
+      <p>Our location sits near the center of four major roadway exit making very convinioent for gym and get your workout done.</p>
+   </section> 
+<section>
+      <img src="check.png"/>
+      <h1>Check Us Out Free.</h1>
+      <p>To show how copnfident we are in our facility and their satisfying the needs. of our clients, we offer a two free weeks pass so anyone interested feel free for a consultation. Call or come in today for your free pass.</p>
+   </section> 
+    <div class="clear"></div>
+    <articlew>
+       <img src ="gym-classes.jpg" width="800" height="532">
+    </articlew>
+      <aside>
+       <h2>Our Group Class Schedule</h2>
+        <ul class="gym">
+          <li><h3>Studio Cycling at 8a.m. 60-min</h3></li> 
+          <li><h3>Abs Sculptiong at 12 p.m. 30 min.</h3></li> 
+          <li><h3>Power Yoga at 10 a.m. 60 m in. </h3></li> 
+          <li><h3>Boot Camp at  2 p.m. 30 min. </h3></li> 
+          <li><h3>Butt Sculpting at 4 p.m. 60. min. </h3></li>
+        </ul>
+
+      </aside>
+         <div class="clear"></div> 
+         <section>
+          <h1>Ladies Section.</h1>
+          <img src="ladies-gym.jpg">
+           <p>Included in our facility is a "Ladies Only" section of the gym where women can workout to themselves.</p>
+         </section>
+        <section>
+          <h1>The Gym Floor.</h1>
+          <img src="gym-floor.jpg">
+           <p>Our Gym Floor is an spacious as they come. Enjoy the view from the cardio equipment from the third floor.</p>
+          </section>
+        <section>
+          <h1>Free Weights.</h1>
+          <img src="free-weights.jpg">
+           <p>Our free weights section  has an extensive collection of dumbbells ans olympics plates for bodybuilding.</p>
+          </section>
+          <footer>
+            <section>
+              <h3><b>The gym</b></h3>
+              <p><b>215-555-5555</b><br><br>
+                1700 Chesnut street<br>
+                philadelphia, Po 19100<br>
+                trainer@thegym.com</p>
+              </section>
+
+              <section>
+                <h3>Connect with Us</h3>
+                 <ul class="social" >
+                  <li><a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/facebook1.png"/></a></li> 
+                  <li><a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/twitter.png"/></a></li>
+                  <li><a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/youtube1.png"/></a></li>
+                </ul>
+              </section>    
+              <section>
+                  <img src="http://www.w3newbie.com/wp-content/uploads/weight-lifter.png"/>
+              </section> 
+          </footer>        
+          <footer class="second">
+            <p>Copinyng Right - The Gym, 2018.</p>
+          </footer> 
+</body>
+</html>
+
+             
+
+             
+
+
+
+
+            
+          
+  
+
+
+              
+
+
+
+
+
